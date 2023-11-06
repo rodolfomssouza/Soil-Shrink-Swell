@@ -5,8 +5,8 @@ Texas with rainfall simulated from the airport weather station parameters.
 """
 
 # %% Packages and libraries ---------------------------------------------------
-using Parquet
 using Revise
+using Parquet
 using SoilShrinkSwell
 
 # Project package

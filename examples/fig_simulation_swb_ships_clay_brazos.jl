@@ -3,6 +3,7 @@ Script to plot soil water balance results
 """
 
 # %% Packages -----------------------------------------------------------------
+using Revise
 using DataFrames
 using KernelDensity
 using Parquet
