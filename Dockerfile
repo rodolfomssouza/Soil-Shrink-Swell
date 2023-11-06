@@ -15,4 +15,4 @@ RUN julia -e 'using Pkg; Pkg.activate("."); Pkg.instantiate()'
 COPY . .
 
 # Default command when the container starts
-CMD ["julia"]
+CMD ["julia", "--project=."]
