@@ -1,5 +1,7 @@
 # Soil shrink-swell water balance simulations
 
+This code runs simulation of soil water balance for a shrink-swell soil.
+
 ## Docker
 
 To build the docker image run:
