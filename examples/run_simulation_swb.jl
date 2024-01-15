@@ -10,7 +10,7 @@ using Parquet
 using SoilShrinkSwell
 
 # Project package
-include("input_parameters_ships_soil_brazos.jl")
+include("input_parameters.jl")
 
 
 # %% Run simulation -----------------------------------------------------------
@@ -32,13 +32,6 @@ include("input_parameters_ships_soil_brazos.jl")
         path_out * "rainfall_series_simulated.parquet",
         df_rain,
         compression_codec="GZIP")
-
-    # # Read rainfall simulated
-    # df_rain = DataFrame(
-    #     read_parquet(
-    #         path_out * "rainfall_series_simulated.parquet",
-    #     ),
-    # )
 
     # Create vector of rainfall
     rain = df_rain[!, :Rain]
