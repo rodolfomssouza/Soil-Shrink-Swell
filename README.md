@@ -19,7 +19,7 @@ To run the code, install [Julia](https://julialang.org/downloads/) and add this 
 
 ```{julia}
 using Pkg
-Pkg.add(url="https://github.com/rodolfomssouza/SoilMoisture.jl")
+Pkg.add(url="https://github.com/rodolfomssouza/Soil-Shrink-Swell")
 ```
 
 # Alternative
