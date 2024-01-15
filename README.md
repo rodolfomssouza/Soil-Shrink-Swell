@@ -24,7 +24,7 @@ Pkg.add(url="https://github.com/rodolfomssouza/Soil-Shrink-Swell")
 
 # Alternative
 
-Additionally, you can use Docker to build an image and run the Soil Shrink Swell simulations
+Additionally, you can use [Docker](https://www.docker.com/) to build an image and run the Soil Shrink Swell simulations.
 
 ## Docker
 
