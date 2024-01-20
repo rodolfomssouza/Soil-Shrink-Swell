@@ -7,7 +7,7 @@ This code is written in [Julia](https://julialang.org/) with the goal of creatin
 The main file is [SoilShrinkSwell.jl](src/SoilShrinkSwell.jl).
 This module contains the equations of the model and the numerical solution using the [Euler method](https://en.wikipedia.org/wiki/Euler_method).
 
-A simple example of how to use this code is shown in [run_simulations.jl](examples/run_simlation_swb.jl).
+A simple example of how to use this code is shown in [run_simulations.jl](examples/run_simlation_swb.jl) and in [notebook simulation](examples/example_swb_simulation.ipynb).
 This code imports the parameters from the file [input_parameters.jl](examples/input_parameters.jl), which are the same parameters used in the published paper.
 A stochastic rainfall series will be generated using the marked Poisson process. Then, the soil moisture model will be executed.
 The results will be saved in the folder examples/outputs in the parquet format.
