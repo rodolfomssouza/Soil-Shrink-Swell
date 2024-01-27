@@ -41,7 +41,7 @@ docker build -t julia-soil -f Dockerfile .
 After building the image run:
 
 ```bash
-docker run it --rm --name soil -v "$PWD":/env julia-soil
+docker run -it --rm --name soil -v "$PWD":/env julia-soil
 ```
 
 ## Download built image
@@ -56,7 +56,7 @@ docker pull rsouzams/julia-soil-shrink:latest
 After pulling the image run:
 
 ```bash
-docker run it --rm --name soil -v "$PWD":/env rsouzams/julia-soil-shrink
+docker run -it --rm --name soil -v "$PWD":/env rsouzams/julia-soil-shrink
 ```
 
 ## Contacts
