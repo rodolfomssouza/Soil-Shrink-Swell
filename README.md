@@ -30,7 +30,7 @@ Pkg.add(url="https://github.com/rodolfomssouza/Soil-Shrink-Swell")
 
 Additionally, you can use [Docker](https://www.docker.com/) to build an image and run the Soil Shrink Swell simulations.
 
-## Docker
+## Build Docker image
 
 To build the docker image run:
 
@@ -40,8 +40,23 @@ docker build -t julia-soil -f Dockerfile .
 
 After building the image run:
 
-```
+```bash
 docker run it --rm --name soil -v "$PWD":/env julia-soil
+```
+
+## Download built image
+
+An alternative to the previous step is **pull** a built docker image. In this case run:
+
+```bash
+docker pull rsouzams/julia-soil-shrink:latest
+
+```
+
+After pulling the image run:
+
+```bash
+docker run it --rm --name soil -v "$PWD":/env rsouzams/julia-soil-shrink
 ```
 
 ## Contacts
